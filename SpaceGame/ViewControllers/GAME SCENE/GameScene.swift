@@ -180,15 +180,7 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
         configureGameOverLabels()
     }
     
-    override func update(_ currentTime: TimeInterval) {
-        for child in children {
-            if child.frame.maxY < 0 {
-                if !frame.intersects(child.frame) {
-                    child.removeFromParent()
-                }
-            }
-        }
-        
+    fileprivate func enemysStep(_ currentTime: TimeInterval) {
         let activeEnemies = children.compactMap { $0 as? EnemyNode }
         
         if activeEnemies.isEmpty {
@@ -206,12 +198,30 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
                 }
             }
         }
-        
+    }
+    
+    fileprivate func playerFireStep(_ currentTime: TimeInterval) {
         if player.lastFireTime + 0.2 < currentTime {
             player.lastFireTime = currentTime
             
             player.fire()
         }
+    }
+    
+    fileprivate func hardRemoveNodesFromBottom() {
+        for child in children {
+            if child.frame.maxY < 0 {
+                if !frame.intersects(child.frame) {
+                    child.removeFromParent()
+                }
+            }
+        }
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        hardRemoveNodesFromBottom()
+        enemysStep(currentTime)
+        playerFireStep(currentTime)
     }
     
     func createWave() {
