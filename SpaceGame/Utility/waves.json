@@ -1,0 +1,132 @@
+[
+	{
+		"name": "small",
+		"enemies": [
+			{
+				"position": 5,
+				"yOffset": 2,
+				"moveStraight": true
+			},
+			{
+				"position": 10,
+				"yOffset": 0,
+				"moveStraight": true
+			},
+			{
+				"position": 15,
+				"yOffset": 2,
+				"moveStraight": true
+			}
+		]
+	},
+	{
+		"name": "medium",
+		"enemies": [
+			{
+				"position": 15,
+				"yOffset": 0,
+				"moveStraight": false
+			},
+			{
+				"position": 19,
+				"yOffset": 2,
+				"moveStraight": false
+			},
+			{
+				"position": 20,
+				"yOffset": 4,
+				"moveStraight": false
+			},
+			{
+				"position": 5,
+				"yOffset": 1,
+				"moveStraight": false
+			},
+			{
+				"position": 9,
+				"yOffset": 3,
+				"moveStraight": false
+			},
+			{
+				"position": 13,
+				"yOffset": 5,
+				"moveStraight": false
+			},
+		]
+	},
+	{
+		"name": "large",
+		"enemies": [
+			{
+				"position": 7,
+				"yOffset": 0,
+				"moveStraight": true
+			},
+			{
+				"position": 6,
+				"yOffset": 1,
+				"moveStraight": true
+			},
+			{
+				"position": 5,
+				"yOffset": 2,
+				"moveStraight": true
+			},
+			{
+				"position": 4,
+				"yOffset": 3,
+				"moveStraight": true
+			},
+			{
+				"position": 8,
+				"yOffset": 1,
+				"moveStraight": true
+			},
+			{
+				"position": 9,
+				"yOffset": 2,
+				"moveStraight": true
+			},
+			{
+				"position": 10,
+				"yOffset": 3,
+				"moveStraight": true
+			},
+			{
+				"position": 2,
+				"yOffset": 8,
+				"moveStraight": false
+			},
+			{
+				"position": 1,
+				"yOffset": 8,
+				"moveStraight": false
+			},
+			{
+				"position": 0,
+				"yOffset": 8,
+				"moveStraight": false
+			},
+			{
+				"position": 6,
+				"yOffset": 9,
+				"moveStraight": false
+			},
+			{
+				"position": 7,
+				"yOffset": 9,
+				"moveStraight": false
+			},
+			{
+				"position": 8,
+				"yOffset": 9,
+				"moveStraight": false
+			},
+		]
+	},
+	{
+		"name": "random",
+		"enemies": [
+		]
+	}
+]
